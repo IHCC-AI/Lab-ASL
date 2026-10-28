@@ -1,0 +1,74 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: system-ui, sans-serif;
+    background: #f2f5f9;
+}
+
+header,
+.panel {
+    padding: 1rem;
+    background: white;
+    border-radius: 0.75rem;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+img,
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+canvas[hidden] {
+    display: none;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.letter {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+table th,
+table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 2px solid black;
+}
+
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+
+    main > div {
+        display: contents;
+    }
+
+    aside img {
+        width: auto;
+        max-width: 100%;
+        max-height: calc(100vh - 22rem);
+    }
+}
