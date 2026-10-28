@@ -5,6 +5,7 @@
 I am proud of this little web app.
 But like all things, it can be improved.
 Your goal is to improve the app in **three** ways.
+Feel free to use as much LLM coding assistance as you need.
 Where are my ideas, but you can come up with your own improvements.
 
 - Improve the user interface with CSS
